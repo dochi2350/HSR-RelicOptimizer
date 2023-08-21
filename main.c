@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
+#include <Windows.h>
 
 int main()
 {
@@ -16,18 +17,18 @@ int main()
     char relic_part[1505][100];
     int relic_level[1505];
     char relic_mainoption[1505][100];
-    double relic_suboption_atk[10];
-    double relic_suboption_atkp[10];
-    double relic_suboption_def[10];
-    double relic_suboption_defp[10];
-    double relic_suboption_hp[10];
-    double relic_suboption_hpp[10];
-    double relic_suboption_spd[10];
-    double relic_suboption_break[10];
-    double relic_suboption_effrate[10];
-    double relic_suboption_effres[10];
-    double relic_suboption_critrate[10];
-    double relic_suboption_critdmg[10];
+    double relic_suboption_atk[1500];
+    double relic_suboption_atkp[1500];
+    double relic_suboption_def[1500];
+    double relic_suboption_defp[1500];
+    double relic_suboption_hp[1500];
+    double relic_suboption_hpp[1500];
+    double relic_suboption_spd[1500];
+    double relic_suboption_break[1500];
+    double relic_suboption_effrate[1500];
+    double relic_suboption_effres[1500];
+    double relic_suboption_critrate[1500];
+    double relic_suboption_critdmg[1500];
     
     fscanf(fp, "%d", &relic_number);
     for(int i = 0; i < relic_number; i++) {
@@ -52,37 +53,59 @@ int main()
 
     printf("There are %d relics uploaded.\n", relic_number);
 
-    for(int i = 0; i < relic_number; i++) {
+    /* for(int i = 0; i < relic_number; i++) {
         printf("%d %s %s %d %s %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf\n", relic_id[i], relic_type[i], relic_part[i], relic_level[i], relic_mainoption[i], relic_suboption_atk[i], relic_suboption_atkp[i], relic_suboption_def[i], relic_suboption_defp[i], relic_suboption_hp[i], relic_suboption_hpp[i], relic_suboption_spd[i], relic_suboption_break[i], relic_suboption_effrate[i], relic_suboption_effres[i], relic_suboption_critrate[i], relic_suboption_critdmg[i]);
-    }
+    } */
 
     fclose(fp);
 
-    printf("1. ìœ ë¬¼ ì¶”ê°€\n");
-    printf("2. ìœ ë¬¼ ì‚­ì œ\n");
-    printf("3. ìœ ë¬¼ ê²€ìƒ‰\n");
-    printf("4. ìœ ë¬¼ ìˆ˜ì •\n");
-    printf("5. ìœ ë¬¼ ëª©ë¡\n");
-    printf("6. ì¢…ë£Œ\n");
+    while(1) {
+        printf("1. À¯¹° Ãß°¡\n");
+        printf("2. À¯¹° »èÁ¦\n");
+        printf("3. À¯¹° °Ë»ö\n");
+        printf("4. À¯¹° ¼öÁ¤\n");
+        printf("5. À¯¹° ¸ñ·Ï\n");
+        printf("6. Á¾·á\n");
+        
+        int pressed = getche();
+        getche();
+        switch(pressed) {
+            case '1':
+                system("cls");
+                printf("À¯¹° Ãß°¡\n");
+                break;
+            case '2':
+                system("cls");
+                printf("À¯¹° »èÁ¦\n");
+                break;
+            case '3':
+                system("cls");
+                printf("À¯¹° °Ë»ö\n");
+                break;
+            case '4':
+                system("cls");
+                printf("À¯¹° ¼öÁ¤\n");
+                break;
+            case '5':
+                system("cls");
+                printf("À¯¹° ¸ñ·Ï\n");
+                
+                for(int i = 0; i < relic_number; i++) {
+                   printf("%d %s %s %d %s %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf\n", relic_id[i], relic_type[i], relic_part[i], relic_level[i], relic_mainoption[i], relic_suboption_atk[i], relic_suboption_atkp[i], relic_suboption_def[i], relic_suboption_defp[i], relic_suboption_hp[i], relic_suboption_hpp[i], relic_suboption_spd[i], relic_suboption_break[i], relic_suboption_effrate[i], relic_suboption_effres[i], relic_suboption_critrate[i], relic_suboption_critdmg[i]);
+                }
 
-    int whattodo;
-    whattodo = scanf("%d", &whattodo);
-
-    if(whattodo == 1) {
-        printf("ìœ ë¬¼ ì¶”ê°€\n");
-    } else if(whattodo == 2) {
-        printf("ìœ ë¬¼ ì‚­ì œ\n");
-    } else if(whattodo == 3) {
-        printf("ìœ ë¬¼ ê²€ìƒ‰\n");
-    } else if(whattodo == 4) {
-        printf("ìœ ë¬¼ ìˆ˜ì •\n");
-    } else if(whattodo == 5) {
-        printf("ìœ ë¬¼ ëª©ë¡\n");
-    } else if(whattodo == 6) {
-        printf("ì¢…ë£Œ\n");
-    } else {
-        printf("ìž˜ëª»ëœ ìž…ë ¥ìž…ë‹ˆë‹¤.\n");
+                getch();
+                break;
+            case '6':
+                return 6;
+            default:
+                system("cls");
+                printf("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù.\n");
+                break;
+        }
+        system("cls");
     }
 
+    getch();
     return 0;
 }

@@ -2,6 +2,6 @@
 1 gunner head 15 hp 0 0 0 0 0 0 0 0 0 0 0 0
 2 paladin hand 15 atk 0 0 0 0 0 0 0 0 0 0 0 0
 3 thunder body 15 critrate 0 0 0 0 0 0 0 0 0 0 0 0
-4 streetfighter foot 15 atkp 0 0 0 0 0 0 0 0 0 0 0 0
-5 staion sphere 15 quantumdmg 0 0 0 0 0 0 0 0 0 0 0 0
+4 fighter foot 15 atkp 0 0 0 0 0 0 0 0 0 0 0 0
+5 station sphere 15 quantumdmg 0 0 0 0 0 0 0 0 0 0 0 0
 6 salsotto rope 15 energy 0 0 0 0 0 0 0 0 0 0 0 0
