@@ -1,6 +1,7 @@
 # HSR-RelicOptimizer
 Relic Optimizer for the mobile game Honkai:Star Rail
 
+## relic.txt 순서
 1.  유물 세트 종류
 2.  유물 부위 종류
 3.  유물 레벨
