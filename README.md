@@ -1,52 +1,97 @@
 # HSR-RelicOptimizer
 Relic Optimizer for the mobile game Honkai:Star Rail
 
-## relic.txt ìˆœì„œ
-1.  ìœ ë¬¼ ì„¸íŠ¸ ì¢…ë¥˜
-2.  ìœ ë¬¼ ë¶€ìœ„ ì¢…ë¥˜
-3.  ìœ ë¬¼ ë ˆë²¨
-4.  ì£¼ì˜µì…˜ ì¢…ë¥˜
-5.  ë³´ì¡°ì˜µì…˜ ê¹¡ê³µ ìˆ˜ì¹˜
-6.  ë³´ì¡°ì˜µì…˜ ê³µí¼ ìˆ˜ì¹˜
-7.  ë³´ì¡°ì˜µì…˜ ê¹¡ë°© ìˆ˜ì¹˜
-8.  ë³´ì¡°ì˜µì…˜ ë°©í¼ ìˆ˜ì¹˜
-9.  ë³´ì¡°ì˜µì…˜ ê¹¡ì²´ ìˆ˜ì¹˜
-10. ë³´ì¡°ì˜µì…˜ ì²´í¼ ìˆ˜ì¹˜
-11. ë³´ì¡°ì˜µì…˜ ì†ë„ ìˆ˜ì¹˜
-12. ë³´ì¡°ì˜µì…˜ ê²©íŠ¹ ìˆ˜ì¹˜
-13. ë³´ì¡°ì˜µì…˜ íš¨ëª… ìˆ˜ì¹˜
-14. ë³´ì¡°ì˜µì…˜ íš¨ì € ìˆ˜ì¹˜
-15. ë³´ì¡°ì˜µì…˜ ì¹˜í™• ìˆ˜ì¹˜
-16. ë³´ì¡°ì˜µì…˜ ì¹˜í”¼ ìˆ˜ì¹˜
+## relic.txt ¼ø¼­
+1.  À¯¹° ¼¼Æ® Á¾·ù
+2.  À¯¹° ºÎÀ§ Á¾·ù
+3.  À¯¹° ·¹º§
+4.  ÁÖ¿É¼Ç Á¾·ù
+5.  º¸Á¶¿É¼Ç ±ø°ø ¼öÄ¡
+6.  º¸Á¶¿É¼Ç °øÆÛ ¼öÄ¡
+7.  º¸Á¶¿É¼Ç ±ø¹æ ¼öÄ¡
+8.  º¸Á¶¿É¼Ç ¹æÆÛ ¼öÄ¡
+9.  º¸Á¶¿É¼Ç ±øÃ¼ ¼öÄ¡
+10. º¸Á¶¿É¼Ç Ã¼ÆÛ ¼öÄ¡
+11. º¸Á¶¿É¼Ç ¼Óµµ ¼öÄ¡
+12. º¸Á¶¿É¼Ç °ÝÆ¯ ¼öÄ¡
+13. º¸Á¶¿É¼Ç È¿¸í ¼öÄ¡
+14. º¸Á¶¿É¼Ç È¿Àú ¼öÄ¡
+15. º¸Á¶¿É¼Ç Ä¡È® ¼öÄ¡
+16. º¸Á¶¿É¼Ç Ä¡ÇÇ ¼öÄ¡
 
-## relic.txt ìœ ë¬¼ ì„¸íŠ¸ ë²ˆì—­
-|í•œê¸€ëª…|relic.txt ë²ˆì—­ëª…|
+## relic.txt À¯¹° ¼¼Æ® ¹ø¿ª
+|ÇÑ±Û¸í|relic.txt ¹ø¿ª¸í|
 |---|---|
-|í˜¹í•œ ë°€ë¦¼ì˜ ì‚¬ëƒ¥ê¾¼|hunter|
-|ë°¤ë‚®ì˜ ê²½ê³„ë¥¼ ë‚˜ëŠ” ë§¤|eagle|
-|ìŠ¤íŠ¸ë¦¬íŠ¸ ê²©íˆ¬ì™•|boxing|
-|ìœ ì„±ì„ ì«“ëŠ” ê´´ë„|theif|
-|í”ì ì„ ë‚¨ê¸°ì§€ ì•Šì€ ê³¼ê°|passerby|
-|ë“¤ì´ì‚­ê³¼ ë™í–‰í•˜ëŠ” ê±°ë„ˆ|gunner|
-|ëˆˆë³´ë¼ì— ë§žì„œëŠ” ì² ìœ„ëŒ€|guard|
-|ë³„ì²˜ëŸ¼ ë¹›ë‚˜ëŠ” ì²œìž¬|genius|
-|ì •í†  êµí™©ì˜ íŒ”ë¼ë”˜|paladin|
-|ë‡Œì „ì„ ìš¸ë¦¬ëŠ” ë°´ë“œ|band|
-|ìš©ì•” ë‹¨ì¡°ì˜ í™”ìž¥|firesmith|
-|í™©ë¬´ì§€ì˜ ë„ì , í™©ì•¼ì¸|desert|
-|ìž¥ìˆ˜ë¥¼ ì›í•˜ëŠ” ì œìž|longlive|
-|ê°€ìƒê³µê°„ì„ ëˆ„ë¹„ëŠ” ë©”ì‹ ì €|messenger|
+|È¤ÇÑ ¹Ð¸²ÀÇ »ç³É²Û|hunter|
+|¹ã³·ÀÇ °æ°è¸¦ ³ª´Â ¸Å|eagle|
+|½ºÆ®¸®Æ® °ÝÅõ¿Õ|boxing|
+|À¯¼ºÀ» ÂÑ´Â ±«µµ|theif|
+|ÈçÀûÀ» ³²±âÁö ¾ÊÀº °ú°´|passerby|
+|µéÀÌ»è°ú µ¿ÇàÇÏ´Â °Å³Ê|gunner|
+|´«º¸¶ó¿¡ ¸Â¼­´Â Ã¶À§´ë|guard|
+|º°Ã³·³ ºû³ª´Â ÃµÀç|genius|
+|Á¤Åä ±³È²ÀÇ ÆÈ¶óµò|paladin|
+|³úÀüÀ» ¿ï¸®´Â ¹êµå|band|
+|¿ë¾Ï ´ÜÁ¶ÀÇ È­Àå|firesmith|
+|È²¹«ÁöÀÇ µµÀû, È²¾ßÀÎ|desert|
+|Àå¼ö¸¦ ¿øÇÏ´Â Á¦ÀÚ|longlive|
+|°¡»ó°ø°£À» ´©ºñ´Â ¸Þ½ÅÀú|messenger|
 
-## relic.txt ì°¨ì› ìž¥ì‹ êµ¬ ë²ˆì—­
-|í•œê¸€ëª…|relic.txt ë²ˆì—­ëª…|
+## relic.txt Â÷¿ø Àå½Å±¸ ¹ø¿ª
+|ÇÑ±Û¸í|relic.txt ¹ø¿ª¸í|
 |---|---|
-|ìš°ì£¼ ë´‰ì¸ ì •ê±°ìž¥|station|
-|ë³¼ë¡œì¸ì˜ ì„ ì£¼|ageless|
-|ë„ì êµ­ íƒˆë¦¬ì•„|talia|
-|ìƒëª…ì˜ ë°”ì»¤ ê³µ|barker|
-|ë²”ì€í•˜ ìƒì‚¬|galactic|
-|ì²œì²´ ì°¨ë¶„ê¸°ê´€|differentiator|
-|ì¶•ì„±ê°€ì˜ ë²¨ë¡œë³´ê·¸|belobog|
-|íšŒì „ì„ ë©ˆì¶˜ ì‚´ì†Œí† |salsotto|
-|ë­‡ë³„ ê²½ê¸°ìž¥|manystars|
-|ë¶€ëŸ¬ì§„ ìš©ê³¨|keel|
+|¿ìÁÖ ºÀÀÎ Á¤°ÅÀå|station|
+|º¼·ÎÀÎÀÇ ¼±ÁÖ|ageless|
+|µµÀû±¹ Å»¸®¾Æ|talia|
+|»ý¸íÀÇ ¹ÙÄ¿ °ø|barker|
+|¹üÀºÇÏ »ó»ç|galactic|
+|ÃµÃ¼ Â÷ºÐ±â°ü|differentiator|
+|Ãà¼º°¡ÀÇ º§·Îº¸±×|belobog|
+|È¸ÀüÀ» ¸ØÃá »ì¼ÒÅä|salsotto|
+|¹µº° °æ±âÀå|manystars|
+|ºÎ·¯Áø ¿ë°ñ|keel|
+
+## relic.txt ¿É¼Ç ¹ø¿ª
+|ÇÑ±Û¸í|relic.txt ¹ø¿ª¸í|
+|---|---|
+|°ø°Ý·Â|atk|
+|°øÆÛ|atkp|
+|¹æ¾î·Â|def|
+|¹æÆÛ|defp|
+|Ã¼·Â|hp|
+|Ã¼ÆÛ|hpp|
+|¼Óµµ|spd|
+|°ÝÆ¯|break|
+|È¿°ú¸íÁß|effrate|
+|È¿°úÀúÇ×|effres|
+|Ä¡È®|critrate|
+|Ä¡ÇÇ|critdmg|
+|¹°¸®ÇÇÁõ|phydmg|
+|È­¿°ÇÇÁõ|firedmg|
+|¾óÀ½ÇÇÁõ|icedmg|
+|¹ø°³ÇÇÁõ|lightdmg|
+|¹Ù¶÷ÇÇÁõ|winddmg|
+|¾çÀÚÇÇÁõ|quantumdmg|
+|Çã¼öÇÇÁõ|voiddmg|
+|¿¡Ãæ|energy|
+|Ä¡À¯·®º¸³Ê½º|healboost|
+
+## ÁÖ¿É¼Ç 0°­-15°­ ¼öÄ¡
+|  |°ø°Ý·Â|°ø°Ý·Â%|¹æ¾î·Â%|Ã¼·Â |Ã¼·Â% |Ä¡È®  |Ä¡ÇÇ  |Ä¡À¯·®º¸³Ê½º|È¿°ú¸íÁß|¼Óµµ|¼Ó¼ºÇÇÇØÁõ°¡|°ÝÆ¯  |¿¡Ãæ  |
+|--|---|----|----|---|----|----|----|------|----|--|------|----|----|
+|0 |56 |6.9 |8.6 |112|6.9 |5.1 |10.3|5.5   |6.9 |4 |6.2   |10.3|3.1 |
+|1 |   |    |    |   |    |    |    |      |    |  |      |    |    |
+|2 |   |    |    |   |    |    |    |      |    |  |      |    |    |
+|3 |   |    |    |   |    |    |    |      |    |  |      |    |    |
+|4 |   |    |    |   |    |    |    |      |    |  |      |    |    |
+|5 |   |    |    |   |    |    |    |      |    |  |      |    |    |
+|6 |   |    |    |   |    |    |    |      |    |  |      |    |    |
+|7 |   |    |    |   |    |    |    |      |    |  |      |    |    |
+|8 |   |    |    |   |    |    |    |      |    |  |      |    |    |
+|9 |   |    |    |   |    |    |    |      |    |  |      |    |    |
+|10|   |    |    |   |    |    |    |      |    |  |      |    |    |
+|11|   |    |    |   |    |    |    |      |    |  |      |    |    |
+|12|   |    |    |   |    |    |    |      |    |  |      |    |    |
+|13|   |    |    |   |    |    |    |      |    |  |      |    |    |
+|14|   |    |    |   |    |    |    |      |    |  |      |    |    |
+|15|352|43.2|54  |705|43.2|32.4|64.8|34.5  |43.2|25|38.8  |64.8|19.4|

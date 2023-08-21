@@ -1,6 +1,85 @@
 #include <stdio.h>
 #include <conio.h>
 #include <Windows.h>
+#include <string.h>
+
+struct Relic {
+    char type[100];
+    char part[100];
+    int level;
+    char mainoption[100];
+    double suboption_atk;
+    double suboption_atkp;
+    double suboption_def;
+    double suboption_defp;
+    double suboption_hp;
+    double suboption_hpp;
+    double suboption_spd;
+    double suboption_break;
+    double suboption_effrate;
+    double suboption_effres;
+    double suboption_critrate;
+    double suboption_critdmg;
+};
+
+int Relic_translate(char *name) {
+    if(!strcmp(name, "hunter")) return "혹한 밀림의 사냥꾼";
+    else if(!strcmp(name, "eagle")) return "밤낮의 경계를 나는 매";
+    else if(!strcmp(name, "boxing")) return "스트리트 격투왕";
+    else if(!strcmp(name, "theif")) return "유성을 쫓는 괴도";
+    else if(!strcmp(name, "passerby")) return "흔적을 남기지 않은 과객";
+    else if(!strcmp(name, "gunner")) return "돌이삭과 동행하는 거너";
+    else if(!strcmp(name, "guard")) return "눈보라에 맞서는 철위대";
+    else if(!strcmp(name, "genius")) return "별처럼 빛나는 천재";
+    else if(!strcmp(name, "paladin")) return "정토 교황의 팔라딘";
+    else if(!strcmp(name, "band")) return "뇌전을 울리는 밴드";
+    else if(!strcmp(name, "firesmith")) return "용암 단조의 화장";
+    else if(!strcmp(name, "desert")) return "황무지의 도적, 황야인";
+    else if(!strcmp(name, "longlive")) return "장수를 원하는 제자";
+    else if(!strcmp(name, "messenger")) return "가상공간을 누비는 메신저";
+    
+    else if(!strcmp(name, "station")) return "우주 봉인 정거장";
+    else if(!strcmp(name, "ageless")) return "불로인의 선주";
+    else if(!strcmp(name, "talia")) return "도적국 탈리아";
+    else if(!strcmp(name, "barker")) return "생명의 바커 공";
+    else if(!strcmp(name, "galactic")) return "범은하 상사";
+    else if(!strcmp(name, "differentiator")) return "천체 차분기관";
+    else if(!strcmp(name, "belobog")) return "축성가의 벨로보그";
+    else if(!strcmp(name, "salsotto")) return "회전을 멈춘 살소토";
+    else if(!strcmp(name, "manystars")) return "뭇별 경기장";
+    else if(!strcmp(name, "keel")) return "부러진 용골";
+
+    else if(!strcmp(name, "head")) return "머리";
+    else if(!strcmp(name, "hand")) return "팔";
+    else if(!strcmp(name, "body")) return "몸통";
+    else if(!strcmp(name, "feet")) return "다리";
+    else if(!strcmp(name, "sphere")) return "구체";
+    else if(!strcmp(name, "rope")) return "매듭";
+
+    else if(!strcmp(name, "atk")) return "공격력";
+    else if(!strcmp(name, "atkp")) return "공퍼";
+    else if(!strcmp(name, "def")) return "방어력";
+    else if(!strcmp(name, "defp")) return "방퍼";
+    else if(!strcmp(name, "hp")) return "체력";
+    else if(!strcmp(name, "hpp")) return "체퍼";
+    else if(!strcmp(name, "spd")) return "속도";
+    else if(!strcmp(name, "break")) return "격특";
+    else if(!strcmp(name, "effrate")) return "효과명중";
+    else if(!strcmp(name, "effres")) return "효과저항";
+    else if(!strcmp(name, "critrate")) return "치확";
+    else if(!strcmp(name, "critdmg")) return "치피";
+    else if(!strcmp(name, "phydmg")) return "물리피증";
+    else if(!strcmp(name, "firedmg")) return "화염피증";
+    else if(!strcmp(name, "icedmg")) return "얼음피증";
+    else if(!strcmp(name, "lightdmg")) return "번개피증";
+    else if(!strcmp(name, "winddmg")) return "바람피증";
+    else if(!strcmp(name, "quantumdmg")) return "양자피증";
+    else if(!strcmp(name, "voiddmg")) return "허수피증";
+    else if(!strcmp(name, "energy")) return "에충";
+    else if(!strcmp(name, "healboost")) return "치유량보너스";
+
+    else return "Error";
+}
 
 int main()
 {
@@ -12,50 +91,29 @@ int main()
     }
     
     int relic_number;
-    int relic_id[1505];
-    char relic_type[1505][100];
-    char relic_part[1505][100];
-    int relic_level[1505];
-    char relic_mainoption[1505][100];
-    double relic_suboption_atk[1500];
-    double relic_suboption_atkp[1500];
-    double relic_suboption_def[1500];
-    double relic_suboption_defp[1500];
-    double relic_suboption_hp[1500];
-    double relic_suboption_hpp[1500];
-    double relic_suboption_spd[1500];
-    double relic_suboption_break[1500];
-    double relic_suboption_effrate[1500];
-    double relic_suboption_effres[1500];
-    double relic_suboption_critrate[1500];
-    double relic_suboption_critdmg[1500];
+    struct Relic relics[1505];
     
     fscanf(fp, "%d", &relic_number);
-    for(int i = 0; i < relic_number; i++) {
-        fscanf(fp, "%d", &relic_id[i]);
-        fscanf(fp, "%s", relic_type[i]);
-        fscanf(fp, "%s", relic_part[i]);
-        fscanf(fp, "%d", &relic_level[i]);
-        fscanf(fp, "%s", relic_mainoption[i]);
-        fscanf(fp, "%lf", &relic_suboption_atk[i]);
-        fscanf(fp, "%lf", &relic_suboption_atkp[i]);
-        fscanf(fp, "%lf", &relic_suboption_def[i]);
-        fscanf(fp, "%lf", &relic_suboption_defp[i]);
-        fscanf(fp, "%lf", &relic_suboption_hp[i]);
-        fscanf(fp, "%lf", &relic_suboption_hpp[i]);
-        fscanf(fp, "%lf", &relic_suboption_spd[i]);
-        fscanf(fp, "%lf", &relic_suboption_break[i]);
-        fscanf(fp, "%lf", &relic_suboption_effrate[i]);
-        fscanf(fp, "%lf", &relic_suboption_effres[i]);
-        fscanf(fp, "%lf", &relic_suboption_critrate[i]);
-        fscanf(fp, "%lf", &relic_suboption_critdmg[i]);
+    for(int i = 1; i <= relic_number; i++) {
+        fscanf(fp, "%s", relics[i].type);
+        fscanf(fp, "%s", relics[i].part);
+        fscanf(fp, "%d", &relics[i].level);
+        fscanf(fp, "%s", relics[i].mainoption);
+        fscanf(fp, "%lf", &relics[i].suboption_atk);
+        fscanf(fp, "%lf", &relics[i].suboption_atkp);
+        fscanf(fp, "%lf", &relics[i].suboption_def);
+        fscanf(fp, "%lf", &relics[i].suboption_defp);
+        fscanf(fp, "%lf", &relics[i].suboption_hp);
+        fscanf(fp, "%lf", &relics[i].suboption_hpp);
+        fscanf(fp, "%lf", &relics[i].suboption_spd);
+        fscanf(fp, "%lf", &relics[i].suboption_break);
+        fscanf(fp, "%lf", &relics[i].suboption_effrate);
+        fscanf(fp, "%lf", &relics[i].suboption_effres);
+        fscanf(fp, "%lf", &relics[i].suboption_critrate);
+        fscanf(fp, "%lf", &relics[i].suboption_critdmg);
     }
 
     printf("There are %d relics uploaded.\n", relic_number);
-
-    /* for(int i = 0; i < relic_number; i++) {
-        printf("%d %s %s %d %s %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf\n", relic_id[i], relic_type[i], relic_part[i], relic_level[i], relic_mainoption[i], relic_suboption_atk[i], relic_suboption_atkp[i], relic_suboption_def[i], relic_suboption_defp[i], relic_suboption_hp[i], relic_suboption_hpp[i], relic_suboption_spd[i], relic_suboption_break[i], relic_suboption_effrate[i], relic_suboption_effres[i], relic_suboption_critrate[i], relic_suboption_critdmg[i]);
-    } */
 
     fclose(fp);
 
@@ -67,36 +125,37 @@ int main()
         printf("5. 유물 목록\n");
         printf("6. 종료\n");
         
-        int pressed = getche();
-        getche();
+        int pressed;
+        scanf("%d", &pressed);
+
         switch(pressed) {
-            case '1':
+            case 1:
                 system("cls");
                 printf("유물 추가\n");
                 break;
-            case '2':
+            case 2:
                 system("cls");
                 printf("유물 삭제\n");
                 break;
-            case '3':
+            case 3:
                 system("cls");
                 printf("유물 검색\n");
                 break;
-            case '4':
+            case 4:
                 system("cls");
                 printf("유물 수정\n");
                 break;
-            case '5':
+            case 5:
                 system("cls");
                 printf("유물 목록\n");
                 
-                for(int i = 0; i < relic_number; i++) {
-                   printf("%d %s %s %d %s %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf\n", relic_id[i], relic_type[i], relic_part[i], relic_level[i], relic_mainoption[i], relic_suboption_atk[i], relic_suboption_atkp[i], relic_suboption_def[i], relic_suboption_defp[i], relic_suboption_hp[i], relic_suboption_hpp[i], relic_suboption_spd[i], relic_suboption_break[i], relic_suboption_effrate[i], relic_suboption_effres[i], relic_suboption_critrate[i], relic_suboption_critdmg[i]);
+                for(int i = 1; i <= relic_number; i++) {
+                    printf("ID. %d : %s %s(%s)+%d\n", i, Relic_translate(relics[i].type), Relic_translate(relics[i].part), Relic_translate(relics[i].mainoption), relics[i].level);
                 }
 
                 getch();
                 break;
-            case '6':
+            case 6:
                 return 6;
             default:
                 system("cls");
