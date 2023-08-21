@@ -1,6 +1,6 @@
 41
 talia rope 15 energy 0 0 76 0 80 0 0 0 4.3 0 6.4 0
-talia rope 15 break 0 4.3 0 0 110 3.4 7 0 0 0 0 0
+talia rope 15 breakeff 0 4.3 0 0 110 3.4 7 0 0 0 0 0
 talia sphere 15 quantumdmg 0 0 0 10.8 0 7.7 0 6.4 12.0 0 0 0
 guard head 15 hp 0 0 0 8.6 0 12.0 0 11.6 0 0 0 6.4
 guard body 15 healboost 0 6.9 0 4.3 0 12.0 0 0 0 0 0 11.6
