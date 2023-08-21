@@ -168,10 +168,6 @@ int main()
         scanf("%d", &pressed);
 
         switch(pressed) {
-            /*
-            TODO 유물 추가 메뉴 유효성 검사
-            BODY 1. 유물 추가에서 유효하지 않은 세트-주옵션-부옵션-수치 조합이 들어가는 것을 막아야 함
-            */
             case 1:
                 system("cls");
                 printf("유물 추가\n");
